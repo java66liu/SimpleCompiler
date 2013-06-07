@@ -1,0 +1,48 @@
+/============================
+/ word
+/============================
+TYPE {byte, char, void, short, int, long}
+ID
+CONST {num, string, char, enum}
+
+ASGOP (assign operation) {=, +=, -=, *=, /=, %=, <<=, >>=, &=, |=, ^=}
+REOP (relation operation) {==, !=, >=, <=, >, <}
+SOP (single operation) {++, --}
+LGOP (logic operation) {&&, ||}
+SLGOP (single logic operation) {!}
+HCPOP (high compute operation) {<<, >>, &, |, ^}
+MCPOP (middle compute operation) {*, /, %}
+LCPOP (low compute operation) {+, -}
+SCPOP (single compute operation) {~}
+
+STRUCT {struct}
+ENUM {enum}
+UNION {union}
+
+SIZEOF {sizeof}
+IF {if}
+ELSE {else}
+SWITCH {switch}
+CASE {case}
+DEFAULT {default}
+DO {do}
+WHILE {while}
+FOR {for}
+RETURN {return}
+BREAK {break}
+CONTINUE {continue}
+
+DOT {.}
+CONT {->}
+
+LP {(}
+RP {)}
+LB {[}
+RB {]}
+LC {{}
+RC {}}
+
+ELIDE {...}
+COLON {:}
+SEMI {;}
+COMMA {,}

@@ -1,0 +1,29 @@
+/============================
+/ grammar
+/============================
+Program -> StmtList
+StmtList -> Stmt | Stmt StmtList
+Stmt -> DefStmt | AssignStmt | CondStmt | LoopStmt | <LC> StmtList <RC> | <SEMI>
+
+DefStmt -> <TYPE> DefList
+DefList -> Def <SEMI> | Def <COMMA> DefList 
+Def -> <ID> | AssignExpr
+
+AssignStmt -> AssignExpr <SEMI>
+
+LoopStmt -> <WHILE> <LP> Expr <RP> Stmt
+CondStmt -> <IF> <LP> Expr <RP> Stmt | <IF> <LP> Expr <RP> Stmt <ELSE> Stmt
+
+Expr -> FaExpr | CpExpr | ReExpr | LgExpr | BtExpr | AssignExpr
+
+AssignExpr -> <ID> <ASOP> Expr
+
+ReExpr -> Expr <REOP> Expr
+
+FaExpr -> <ID> | <NUM> | <LP> Expr <RP>
+LcpExpr -> LcpExpr <HCPOP> FaExpr | FaExpr
+CpExpr -> CpExpr <LCPOP> LcpExpr | LcpExpr
+
+LgExpr -> Expr <LGOP> Expr | <SLGOP> Expr
+BtExpr -> Expr <BTOP> Expr | <SBTOP> Expr
+

@@ -1,0 +1,36 @@
+/============================
+/ word
+/============================
+TYPE {char, short, int}
+ID
+INT
+
+ASSIGNOP (assign operation) {=, +=, -=, *=, /=}
+RELOP (relation operation) {==, !=, >=, <=, >, <}
+AND (and) {&&}
+OR (or) {||}
+NOT (not) {!}
+PLUS (plus) {+}
+MINUS (minus) {-}
+STAR (star) {*}
+DIV (div) {/}
+
+STRUCT {struct}
+ENUM {enum}
+
+IF {if}
+ELSE {else}
+WHILE {while}
+RETURN {return}
+
+DOT {.}
+
+LP {(}
+RP {)}
+LB {[}
+RB {]}
+LC {{}
+RC {}}
+
+SEMI {;}
+COMMA {,}

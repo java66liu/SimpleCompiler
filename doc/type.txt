@@ -1,0 +1,8 @@
+type :
+
+byte : 8bit
+char : 8bit
+void : 8bit
+short : 16bit
+int : 32bit
+long : 32bit
